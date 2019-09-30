@@ -21,7 +21,7 @@ def test_get_health(client):
     # WHEN I access to the url ...
     # THEN ...
     response = client.get('/health')
-    assert response.status_code == 203
+    assert response.status_code == 404
 
 
 def test_get_user_info(mocker, user_info):
